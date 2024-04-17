@@ -1,256 +1,66 @@
-# DOLIBARR ERP & CRM
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-![Downloads per day](https://img.shields.io/sourceforge/dw/dolibarr.svg)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/)
-[![GitHub release](https://img.shields.io/github/v/release/Dolibarr/dolibarr)](https://github.com/Dolibarr/dolibarr)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5521/badge)](https://bestpractices.coreinfrastructure.org/projects/5521)
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Dolibarr ERP & CRM is a modern software package that helps manage your organization's activities (contacts, suppliers, invoices, orders, stocks, agenda…).
+## About Laravel
 
-It's an Open-Source Software suite (written in PHP with JavaScript enhancements) designed for small, medium or large companies, foundations and freelancers.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-You can freely use, study, modify or distribute it according to its license.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-You can use it as a standalone application or as a web application to access it from the Internet or from a LAN.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Dolibarr has a large community ready to help you, free forums and [preferred partners ready to offer commercial support should you need it](https://partners.dolibarr.org)
+## Learning Laravel
 
-![ScreenShot](https://www.dolibarr.org/medias/dolibarr_screenshot1_1920x1080.jpg)
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## LICENSE
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-Dolibarr is released under the terms of the GNU General Public License as published by the Free Software Foundation; either Version 3 of the License, or (at your option) any later version (GPL-3+).
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-See the [COPYING](https://github.com/Dolibarr/dolibarr/blob/develop/COPYING) file for a full copy of the license.
+## Laravel Sponsors
 
-Other licenses apply for some included dependencies. See [COPYRIGHT](https://github.com/Dolibarr/dolibarr/blob/develop/COPYRIGHT) for a full list.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-## INSTALLING
+### Premium Partners
 
-### Simple setup
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-If you have low technical skills and you're looking to install Dolibarr ERP/CRM with just a few clicks, you can use one of the packaged versions:
+## Contributing
 
-- [DoliWamp for Windows](https://wiki.dolibarr.org/index.php/Dolibarr_for_Windows_(DoliWamp))
-- [DoliDeb for Debian](https://wiki.dolibarr.org/index.php/Dolibarr_for_Ubuntu_or_Debian)
-- DoliRpm for Red Hat, Fedora, OpenSuse, Mandriva or Mageia
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Releases can be downloaded from [official website](https://www.dolibarr.org/).
+## Code of Conduct
 
-### Advanced setup
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-You can use a web server and a supported database (MariaDB, MySQL or PostgreSQL) to install the standard version.
+## Security Vulnerabilities
 
-On GNU/Linux, first check if your distribution has already packaged Dolibarr.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-#### Generic install steps
+## License
 
-- Verify that your installed PHP version is supported [see PHP support](https://wiki.dolibarr.org/index.php/Releases).
-
-- Uncompress the downloaded .zip archive to copy the `dolibarr/htdocs` directory and all its files inside your web server root or get the files directly from GitHub (recommended if you know git as it makes it easier if you want to upgrade later):
-
-  `git clone https://github.com/dolibarr/dolibarr -b x.y`     (where x.y is the main version like 3.6, 9.0, ...)
-
-- Set up your web server to use `dolibarr/htdocs` as root if your web server does not already define a directory to point to.
-
-- Create an empty `htdocs/conf/conf.php` file and set *write* permissions for your web server user (*write* permission will be removed once install is finished)
-
-- From your browser, go to the dolibarr "install/" page
-
-  The URL will depend on how your web configuration directs to your dolibarr installation. It may look like:
-
-  `http://localhost/dolibarr/htdocs/install/`
-
-  or
-
-  `http://localhost/dolibarr/install/`
-
-  or
-
-  `http://yourdolibarrvirtualhost/install/`
-
-- Follow the installer instructions
-
-### SaaS/Cloud Setup
-
-If you lack the time to install it yourself, consider exploring commercial 'ready-to-use' Cloud offerings (refer to https://saas.dolibarr.org). Keep in mind that this third option comes with associated costs.
-
-## UPGRADING
-
-Dolibarr supports upgrading, usually without the need for any (commercial) support (depending on if you use any commercial extensions). It supports upgrading all the way from any version after 2.8 without breakage. This is unique in the ERP ecosystem and a benefit our users highly appreciate!
-
-Follow these step-by-step instructions to seamlessly upgrade Dolibarr to the latest version:
-
-- At first make a backup of your Dolibarr files & then [see](https://wiki.dolibarr.org/index.php/Installation_-_Upgrade#Upgrade_Dolibarr)
-- Verify that your installed PHP version is supported by the new version [see PHP support](https://wiki.dolibarr.org/index.php/Releases).
-- Overwrite all old files from the 'dolibarr' directory with files provided in the new version's package.
-- At your next access, Dolibarr will redirect you to the "install/" page to follow the upgrade process.
-  If an `install.lock` file exists to lock any other upgrade process, the application will ask you to remove the file manually (you should find the `install.lock` file in the directory used to store generated and uploaded documents, in most cases, it is the directory called "*documents*").
-
-## WHAT'S NEW
-
-See the [ChangeLog](https://github.com/Dolibarr/dolibarr/blob/develop/ChangeLog) file.
-
-## FEATURES
-
-### Main application/modules (all optional)
-
-- Third-Parties Management: Customers, Prospects (Leads) and/or Suppliers + Contacts
-- Members/Membership/Foundation management
-
- Product Management
-
-- Products and/or Services catalogue
-- Stock / Warehouse management + Inventory
-- Barcodes
-- Batches / Lots / Serials
-- Product Variants
-- Bill of Materials (BOM)
-- Manufacturing Orders (MO)
-
- Customer/Sales Management
-
-- Customers/Prospects + Contacts management
-- Opportunities or Leads management
-- Commercial proposals management (online signing)
-- Customer Orders management
-- Contracts/Subscription management
-- Interventions management
-- Ticket System (+ Knowledge management)
-- Partnership management
-- Shipping management
-- Customer Invoices/Credit notes and payment management
-- Point of Sale (POS)
-
- Supplier/Purchase Management
-
-- Suppliers/Vendors + Contacts
-- Supplier (pricing) requests
-- Purchase Orders management
-- Delivery/Reception
-- Supplier Invoices/Credit notes and payment management
-- INCOTERMS
-
- Finance/Accounting
-
-- Invoices/Payments
-- Bank accounts management
-- Direct debit and Credit transfer management (European SEPA)
-- Accounting management
-- Donations management
-- Loan management
-- Margins
-- Reports
-
- Collaboration
-
-- Shared calendar/agenda (with `ical` and `vcal` import/export for third-party tools integration)
-- Projects & Tasks management
-- Event organization
-- Ticket System
-- Surveys
-
- HR - Human Resources Management
-
-- Employee leave management
-- Expense reports
-- Recruitment management
-- Employee/staff management
-- Timesheets
-
-### Other application/modules
-
-- Electronic Document Management (EDM)
-- Bookmarks
-- Reporting
-- Data export/import
-- Barcodes
-- LDAP connectivity
-- ClickToDial integration
-- Mass emailing
-- RSS integration
-- Social platforms linking
-- Payment platforms integration (PayPal, Stripe, Paybox...)
-- Email-Collector
-
-(around 100 modules available by default, 1000+ addons at the official marketplace Dolistore.com)
-
-### Other general features
-
-- Multi-Language Support (Localization in most major languages)
-- Multi-users and groups with finely-grained rights
-- Multi-Currency
-- Multi-Company (by adding an external module)
-- Very user-friendly and easy to use
-- Customizable dashboards
-- Highly customizable: enable only the modules you need, add user personalized fields, choose your skin, several menu managers (can be used by internal users as a back-office with a particular menu, or by external users as a front-office with another one)
-- APIs (REST, SOAP)
-- Code that is easy to understand, maintain and develop (PHP with no heavy framework; trigger and hook architecture)
-- Support a lot of country-specific features:
-  - Spanish Tax RE and IRPF
-  - French NPR VAT rate (VAT called "Non Perçue Récupérable" for DOM-TOM)
-  - Canadian double taxes (federal/province) and other countries using cumulative VAT
-  - Tunisian tax stamp
-  - Argentina invoice numbering using A,B,C...
-  - Greece fetch customer vat details from AADE, all invoice types, MyData(external free module)
-  - ZATCA e-invoicing QR-Code
-  - Compatible with [European directives](https://europa.eu/legislation_summaries/taxation/l31057_en.htm) (2006/112/CE ... 2010/45/UE)
-  - Compatible with data privacy rules (Europe's GDPR, ...)
-  - ...
-- Flexible PDF & ODT generation for invoices, proposals, orders...
-- ...
-
-### System Environment / Requirements
-
-- PHP
-- MariaDB, MySQL or PostgreSQL
-- Compatible with all Cloud solutions that match PHP & MySQL or PostgreSQL prerequisites.
-
-See exact requirements on the [Wiki](https://wiki.dolibarr.org/index.php/Prerequisite)
-
-### Extending
-
-Dolibarr can be extended with a lot of other external applications or modules from third-party developers available at the [DoliStore](https://www.dolistore.com).
-
-## WHAT DOLIBARR CAN'T DO YET
-
-These are features that Dolibarr does **not** yet fully support:
-
-- Tasks dependencies in projects
-- Payroll module
-- Native embedded Webmail, but you can send email to contacts in Dolibarr with e.g. offers, invoices, etc.
-- Dolibarr can't do coffee (yet)
-
-## DOCUMENTATION
-
-Administrator, user, developer and translator's documentation are available along with other community resources in the [Wiki](https://wiki.dolibarr.org).
-
-## CONTRIBUTING
-
-This project exists thanks to all the people who contribute.
-Please read the instructions on how to contribute (report a bug/error, a feature request, send code, ...)  [[Contributing](https://github.com/Dolibarr/dolibarr/blob/develop/.github/CONTRIBUTING.md)]
-
-A View on Contributors:
-
-[![Dolibarr](https://opencollective.com/dolibarr/contributors.svg?width=890&button=false)](https://github.com/Dolibarr/dolibarr/graphs/contributors)
-
-## CREDITS
-
-Dolibarr is the work of many contributors over the years and uses some fine PHP libraries.
-
-See [COPYRIGHT](https://github.com/Dolibarr/dolibarr/blob/develop/COPYRIGHT) file.
-
-## NEWS AND SOCIAL NETWORKS
-
-Follow Dolibarr project on:
-
-- [Facebook](https://www.facebook.com/dolibarr)
-- [X](https://x.com/dolibarr)
-- [LinkedIn](https://www.linkedin.com/company/association-dolibarr)
-- [Reddit](https://www.reddit.com/r/Dolibarr_ERP_CRM/)
-- [YouTube](https://www.youtube.com/user/DolibarrERPCRM)
-- [GitHub](https://github.com/Dolibarr/dolibarr)
-
-### Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here. 🙏 [[Become a sponsor/backer](https://opencollective.com/dolibarr#backer)]
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
